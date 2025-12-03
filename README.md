@@ -1,3 +1,5 @@
+<img width="1008" height="506" alt="image" src="https://github.com/user-attachments/assets/8eb1ed0f-8213-4ba9-b8fb-02b8a16e6616" />
+
 # BNDL-Lite
 BNDL Lite is the Materials-tree only version of BNDL Pro. It can transform binary Blender Trees into editable, human-readable definitions and replay them against object with full fidelity.
 
