@@ -1,0 +1,91 @@
+# BNDL Export v1.4
+Tree_Type: MATERIAL
+# Blender_Version: 4.5.5 LTS
+# Export_Date: 2025-12-01 17:54:52
+# Node_Tree: Orange_minecraft
+# Node_Count: 7
+
+# === MATERIAL DEFINITIONS ===
+
+# === MATERIAL TREE ===
+Create  ShaderNodeOutputMaterial  "Material Output#1"
+Create  ShaderNodeBsdfPrincipled  "Principled BSDF#2"
+Create  ShaderNodeTexCoord  "Texture Coordinate#3"
+Create  ShaderNodeMapping  "Mapping#4"
+Create  ShaderNodeTexImage  "Image Texture#5"
+Create  ShaderNodeNormalMap  "Normal Map#6"
+Create  ShaderNodeTexVoronoi  "Voronoi Texture#7"
+Set  [ Material Output#1 ]
+    "Displacement" to <0, 0, 0>
+    "Thickness" to 0
+    "mute" to false
+    "location" to <401.964, 205.999>
+Set  [ Principled BSDF#2 ]
+    "Base Color" to <1, 0.128, 0.001, 1>
+    "Roughness" to 0.25
+    "IOR" to 1.45
+    "Alpha" to 1
+    "Weight" to 0
+    "Diffuse Roughness" to 0
+    "Subsurface Weight" to 1
+    "Subsurface Radius" to <1, 0.2, 0.1>
+    "Subsurface Scale" to 0.1
+    "Subsurface IOR" to 1.4
+    "Subsurface Anisotropy" to 0
+    "Specular IOR Level" to 0.75
+    "Specular Tint" to <1, 1, 1, 1>
+    "Anisotropic" to 0
+    "Anisotropic Rotation" to 0
+    "Tangent" to <0, 0, 0>
+    "Transmission Weight" to 0
+    "Coat Weight" to 0.25
+    "Coat Roughness" to 0.451
+    "Coat IOR" to 1.5
+    "Coat Tint" to <1, 1, 1, 1>
+    "Coat Normal" to <0, 0, 0>
+    "Sheen Weight" to 0
+    "Sheen Roughness" to 0.5
+    "Sheen Tint" to <1, 1, 1, 1>
+    "Emission Color" to <0, 0, 0, 1>
+    "Emission Strength" to 1
+    "Thin Film Thickness" to 0
+    "Thin Film IOR" to 1.33
+    "mute" to false
+    "location" to <111.964, 205.999>
+Set  [ Texture Coordinate#3 ]
+    "mute" to false
+    "location" to <-870.536, 75.165>
+Set  [ Mapping#4 ]
+    "Location" to <0, 0, 0>
+    "Rotation" to <0, 0, 0>
+    "Scale" to <8, 8, 8>
+    "vector_type" to "©NORMAL©"
+    "mute" to false
+    "location" to <-680.536, 75.165>
+Set  [ Image Texture#5 ]
+    "image" to "✷proxy_TranslucentPlasticB_N.jpg.004✷"
+    "interpolation" to "©Linear©"
+    "mute" to false
+    "location" to <-378.036, 75.165>
+Set  [ Normal Map#6 ]
+    "Strength" to 0.09
+    "mute" to false
+    "location" to <-88.036, 75.165>
+Set  [ Voronoi Texture#7 ]
+    "Vector" to <0, 0, 0>
+    "W" to 0
+    "Scale" to 12.7
+    "Detail" to 2
+    "Roughness" to 0.5
+    "Lacunarity" to 0
+    "Smoothness" to 1
+    "Exponent" to 0.5
+    "Randomness" to 0
+    "mute" to false
+    "location" to <-305.318, 455.349>
+Connect  "Principled BSDF#2"  "BSDF"  to  "Material Output#1"  "Surface"
+Connect  "Mapping#4"  "Vector"  to  "Image Texture#5"  "Vector"
+Connect  "Texture Coordinate#3"  "UV"  to  "Mapping#4"  "Vector"
+Connect  "Normal Map#6"  "Normal"  to  "Principled BSDF#2"  "Normal"
+Connect  "Image Texture#5"  "Color"  to  "Normal Map#6"  "Color"
+Connect  "Voronoi Texture#7"  "Color"  to  "Principled BSDF#2"  "Metallic"

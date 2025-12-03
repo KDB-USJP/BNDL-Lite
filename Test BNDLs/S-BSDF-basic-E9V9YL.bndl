@@ -1,0 +1,52 @@
+# BNDL Export v1.4
+Tree_Type: MATERIAL
+# Blender_Version: 4.5.5 LTS
+# Export_Date: 2025-12-03 14:26:46
+# Node_Tree: BSDF-basic
+# Node_Count: 2
+
+# === MATERIAL DEFINITIONS ===
+
+# === MATERIAL TREE ===
+Create  ShaderNodeOutputMaterial  "Material Output#1"
+Create  ShaderNodeBsdfPrincipled  "Principled BSDF#2"
+Set  [ Material Output#1 ]
+    "Displacement" to <0, 0, 0>
+    "Thickness" to 0
+    "mute" to false
+    "location" to <200, 100>
+Set  [ Principled BSDF#2 ]
+    "Base Color" to <0.011, 0.105, 0.8, 1>
+    "Metallic" to 0
+    "Roughness" to 0.5
+    "IOR" to 1.45
+    "Alpha" to 1
+    "Normal" to <0, 0, 0>
+    "Weight" to 0
+    "Diffuse Roughness" to 0
+    "Subsurface Weight" to 0
+    "Subsurface Radius" to <1, 0.2, 0.1>
+    "Subsurface Scale" to 0.05
+    "Subsurface IOR" to 1.4
+    "Subsurface Anisotropy" to 0
+    "Specular IOR Level" to 0.5
+    "Specular Tint" to <1, 1, 1, 1>
+    "Anisotropic" to 0
+    "Anisotropic Rotation" to 0
+    "Tangent" to <0, 0, 0>
+    "Transmission Weight" to 0
+    "Coat Weight" to 0
+    "Coat Roughness" to 0.03
+    "Coat IOR" to 1.5
+    "Coat Tint" to <1, 1, 1, 1>
+    "Coat Normal" to <0, 0, 0>
+    "Sheen Weight" to 0
+    "Sheen Roughness" to 0.5
+    "Sheen Tint" to <1, 1, 1, 1>
+    "Emission Color" to <1, 1, 1, 1>
+    "Emission Strength" to 0
+    "Thin Film Thickness" to 0
+    "Thin Film IOR" to 1.33
+    "mute" to false
+    "location" to <-200, 100>
+Connect  "Principled BSDF#2"  "BSDF"  to  "Material Output#1"  "Surface"
