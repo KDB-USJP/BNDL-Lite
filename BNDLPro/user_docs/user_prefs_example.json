@@ -1,0 +1,20 @@
+{
+  "bndl_directories": [
+    {
+      "name": "Personal Library",
+      "directory": "C:/Users/Artist/Documents/Blender/BNDL"
+    },
+    {
+      "name": "Client Work",
+      "directory": "D:/Projects/ClientA/node_assets"
+    }
+  ],
+  "name_prefix_1": "MYNAME",
+  "name_prefix_2": "",
+  "name_suffix_1": "_v1",
+  "overall_notes": "Personal node library\nTesting new procedural workflows",
+  "keep_replay_text": true,
+  "round_float_precision": true,
+  "reuse_proxies": true,
+  "asset_dependency_mode": "PROXIES"
+}

@@ -1,0 +1,26 @@
+{
+  "bndl_directories": [
+    {
+      "name": "Feature Film Project",
+      "directory": "//server/share/film/bndl_library"
+    },
+    {
+      "name": "Commercial Work",
+      "directory": "//server/share/commercial/bndl_assets"
+    },
+    {
+      "name": "R&D",
+      "directory": "//server/share/research/node_templates"
+    }
+  ],
+  "name_prefix_1": "STUDIO",
+  "name_prefix_2": "",
+  "name_suffix_1": "",
+  "overall_notes": "Company Node Library - Internal Use Only\nContact: techsupport@studio.com",
+  "keep_replay_text": false,
+  "round_float_precision": true,
+  "reuse_proxies": true,
+  "asset_dependency_mode": "APPEND_ASSETS",
+  "studio_license_email": "studio@company.com",
+  "studio_license_key": "YOUR_BULK_LICENSE_KEY_HERE"
+}
